@@ -35,7 +35,7 @@ repos:
     tab: BEES
     title: Project BEES
     group: extensions
-    summary: The BEAM Elastic Execution Surface, the shim that lets Erlang, Elixir, Gleam and LFE compile to Silica.
+    summary: A Silica security and node-management extension, with example extensions that let apps written in other languages become nodes in a network of Silica nodes.
   - name: to-silica
     tab: to-silica
     title: to-silica

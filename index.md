@@ -15,7 +15,7 @@ The language itself is documented on the [Silica documentation site]({{ site.doc
 
 Every public repository in the organization. The tabs at the top of the page link to the same repositories.
 
-{% assign groups = "language|The language and its compiler,tools|Tooling and examples,extensions|Extensions: bringing other languages to Silica,org|The organization" | split: "," %}
+{% assign groups = "language|The language and its compiler,tools|Tooling and examples,extensions|Extensions,org|The organization" | split: "," %}
 {% for g in groups %}
 {% assign parts = g | split: "|" %}
 {% assign members = site.repos | where: "group", parts[0] %}
