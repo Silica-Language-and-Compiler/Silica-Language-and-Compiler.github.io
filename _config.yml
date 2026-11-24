@@ -1,0 +1,63 @@
+title: Silica Language and Compiler
+description: Stewardship of the Silica language and its standard components
+url: https://silica-language-and-compiler.github.io
+# Served from the domain root, not a project subpath.
+baseurl: ""
+
+github_org: https://github.com/Silica-Language-and-Compiler
+docs_url: https://silica-language-and-compiler.github.io/silica/
+
+# Every public repository the organization owns. The header tabs and the
+# Projects cards are both built from this list: add a repository here and
+# it appears in both. `tab` is the short label used in the header.
+repos:
+  - name: silica
+    tab: Silica
+    title: Silica
+    group: language
+    summary: The self-hosted compiler, the language specification, the standard library, tutorials, and trials.
+  - name: The-Tao-of-Silica
+    tab: The Tao
+    title: The Tao of Silica
+    group: language
+    summary: A book, for human readers, on the path that led to Silica and the ideas behind it.
+  - name: silica-cli
+    tab: CLI
+    title: silica-cli
+    group: tools
+    summary: The silica command. Downloads the latest released compiler, then builds and runs Silica programs.
+  - name: silica-examples
+    tab: Examples
+    title: silica-examples
+    group: tools
+    summary: Small, runnable programs, from hello-world to a key-value server and supervised workers.
+  - name: project-bees
+    tab: BEES
+    title: Project BEES
+    group: extensions
+    summary: The BEAM Elastic Execution Surface, the shim that lets Erlang, Elixir, Gleam and LFE compile to Silica.
+  - name: to-silica
+    tab: to-silica
+    title: to-silica
+    group: extensions
+    summary: The officially tracked transpilers from other languages to Silica, sharing one contract.
+  - name: Silica-Language-and-Compiler.github.io
+    tab: This Site
+    title: Organization website
+    group: org
+    summary: The source of this site.
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
