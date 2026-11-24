@@ -13,7 +13,7 @@ The language itself is documented on the [Silica documentation site]({{ site.doc
 
 ## Projects
 
-Every public repository in the organization. The tabs at the top of the page link to the same repositories.
+Every public repository in the organization. The tabs at the top of the page link to the same repositories. Where the projects stand today, and what you can do with them, is on the [Project Status]({{ '/project-status/' | relative_url }}) page.
 
 {% assign groups = "language|The language and its compiler,tools|Tooling and examples,extensions|Extensions,org|The organization" | split: "," %}
 {% for g in groups %}
