@@ -35,12 +35,12 @@ repos:
     tab: BEES
     title: Project BEES
     group: extensions
-    summary: A Silica security and node-management extension, with example extensions that let apps written in other languages become nodes in a network of Silica nodes.
+    summary: A Silica security and node-management extension. It is a target for the to-silica transpilers, and its example extensions let apps written in other languages become nodes in a network of Silica nodes.
   - name: to-silica
     tab: to-silica
     title: to-silica
     group: extensions
-    summary: The officially tracked transpilers from other languages to Silica, sharing one contract.
+    summary: The officially tracked transpilers from other languages to Silica, sharing one contract. Project BEES is one of their targets.
   - name: Silica-Language-and-Compiler.github.io
     tab: This Site
     title: Organization website
