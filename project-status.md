@@ -72,6 +72,18 @@ Still being developed for a full and complete BEES extension: TEMPUS configurati
 - Converted programs can run as nodes on BEES in its standard distribution mode. Three-node and five-node complete meshes exist in Erlang, Elixir and Gleam. A six-node mesh of Erlang, Elixir, Gleam and one hand-written Silica node ran on one Mac, with all thirty requests answered.
 - It converts a subset, not whole programs. `APP_GAPS.md` lists what real applications ran into, and `HOWTO_language_creators.md` is the guide for a language owner who wants to write a sender.
 
+## silica-cli
+
+[silica-cli](https://github.com/Silica-Language-and-Compiler/silica-cli) is the `silica` command. It builds and runs Silica programs with one command, with no Makefile to copy and no compiler to build. One `curl` line installs it, and it downloads the latest released compiler, the specification and the standard library for your machine.
+
+- Unlike the projects above, it has releases: v0.1.8 is the latest. Every merge to `main` that passes the tests is released, and `silica update` updates the CLI itself along with every installed compiler.
+- It runs on macOS on Apple Silicon, Linux on AArch64 and Linux on x86-64, and CI tests it on all three. With `--target` it cross-compiles, including for the ESP32-S3, where the build stops at assembly for the board's own toolchain.
+- `silica spec` tells AI coding agents where the installed specification is and how to use it.
+
+## silica-examples
+
+[silica-examples](https://github.com/Silica-Language-and-Compiler/silica-examples) holds small, runnable Silica programs, each one a folder that `silica run` builds and runs. They range from first programs to actors, timers, supervisors, network servers and storage carriers. Every pull request builds, runs and checks each example on the three hosted platforms, with the latest CLI and the latest released compiler, and new examples are welcome.
+
 ## The Tao of Silica
 
 [The Tao of Silica: Building a Society of Actors](https://github.com/Silica-Language-and-Compiler/The-Tao-of-Silica) is a book, written for people rather than compilers, about the path that led to Silica and the ideas behind it. Part I asks why Silica exists and tells how it got here. Part II sets out the ten principles the language is built on:
